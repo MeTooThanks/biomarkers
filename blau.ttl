@@ -18,6 +18,7 @@
 @prefix book: <http://dx.doi.org/10.1007/978-3-642-40337-8> .
 @prefix chapter1: <http://dx.doi.org/10.1007/978-3-642-40337-8_1> .
 @prefix chapter11: <http://dx.doi.org/10.1007/978-3-642-40337-8_11> .
+@prefix chapter11: <http://dx.doi.org/10.1007/978-3-642-40337-8_12> .
 @prefix chapter20: <http://dx.doi.org/10.1007/978-3-642-40337-8_20> .
 @prefix chapter31: <http://dx.doi.org/10.1007/978-3-642-40337-8_31> .
 @prefix chapter41: <http://dx.doi.org/10.1007/978-3-642-40337-8_41> .
@@ -25,6 +26,7 @@
 :Blau a void:Dataset ; cito:citesAsDataSource book: .
 chapter1: dcterms:isPartOf book: .
 chapter11: dcterms:isPartOf book: .
+chapter12: dcterms:isPartOf book: .
 chapter20: dcterms:isPartOf book: .
 chapter31: dcterms:isPartOf book: .
 chapter41: dcterms:isPartOf book: .
@@ -271,3 +273,36 @@ wd:Q27140249 a CHEBI:25367; rdfs:label " C4-DC succinyl-carnitine " .
 wd:Q239598 a CHEBI:25367; rdfs:label " Methylmalonic acid" .
 :assoc80 a association: ; refersTo: chapter20:, wd:Q239598, omim:612073 .
 :assoc81 a association: ; refersTo: chapter20:, wd:Q239598, omim:245400 .
+
+# disease labels Chapter12 (Hermann Ritter)
+
+omim:252150 a ncit:C7057 ; rdfs:label "molybdenum cofactor deficiency a" .
+omim:252160 a ncit:C7057 ; rdfs:label "molybdenum cofactor deficiency b" .
+omim:615501 a ncit:C7057 ; rdfs:label "molybdenum cofactor deficiency c" .
+
+# molecule-disease associations (Hermann Ritter)
+
+wd:Q408626 a chebi:4052 ; rdfs:label "cystine" .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q408626, omim:252150 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q408626, omim:252160 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q408626, omim:615501 .
+
+wd:Q192466 a chebi:5751 ; rdfs:label "homocysteine" .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q192466, omim:252150 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q192466, omim:252160 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q192466, omim:615501 .
+
+wd:Q27095171 a chebi:27891 ; rdfs:label "s-sulfocysteine" .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q27095171, omim:252150 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q27095171, omim:252160 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q27095171, omim:615501 .
+
+wd:Q413363 a chebi:26823 ; rdfs:label "sulfite" .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q413363, omim:252150 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q413363, omim:252160 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q413363, omim:615501 .
+
+wd:Q207051 a chebi:9406 ; rdfs:label "taurine" .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q207051, omim:252150 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q207051, omim:252160 .
+:assoc82 a association: ; refersTo: chapter12:, wd:Q207051, omim:615501 .
